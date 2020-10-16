@@ -1,8 +1,8 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "blocks/bank",
-		"particle": "minecraft:particle/sweep_3"
+		"0": "efc:blocks/bank",
+		"particle": "efc:blocks/bank"
 	},
 	"elements": [
 		{
@@ -100,7 +100,7 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [0, -180, 0]
+			"rotation": [0, 0, 0]
 		},
 		"head": {
 			"translation": [0, 14, 0]

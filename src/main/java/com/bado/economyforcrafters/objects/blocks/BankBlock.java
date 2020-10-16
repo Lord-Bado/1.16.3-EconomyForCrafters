@@ -37,7 +37,7 @@ public class BankBlock extends Block{
     
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
     
-    private static final VoxelShape SHAPE_N = Stream.of(
+    private static final VoxelShape SHAPE_S = Stream.of(
     		Block.makeCuboidShape(0, 0, 0, 16, 1, 16),
     		Block.makeCuboidShape(0, 4, 10, 16, 14, 11),
     		Block.makeCuboidShape(7, 1, 11, 9, 10, 13),
@@ -45,7 +45,7 @@ public class BankBlock extends Block{
     		Block.makeCuboidShape(5, 1, 1, 15, 2, 5)
     		).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
     
-    private static final VoxelShape SHAPE_E=Stream.of(
+    private static final VoxelShape SHAPE_W=Stream.of(
     		Block.makeCuboidShape(0, 0, 0, 16, 1, 16),
     		Block.makeCuboidShape(5, 4, 0, 6, 14, 16),
     		Block.makeCuboidShape(3, 1, 7, 5, 10, 9),
@@ -53,7 +53,7 @@ public class BankBlock extends Block{
     		Block.makeCuboidShape(11, 1, 5, 15, 2, 15)
     		).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
     
-    private static final VoxelShape SHAPE_S=Stream.of(
+    private static final VoxelShape SHAPE_N=Stream.of(
     		Block.makeCuboidShape(0, 0, 0, 16, 1, 16),
     		Block.makeCuboidShape(0, 4, 5, 16, 14, 6),
     		Block.makeCuboidShape(7, 1, 3, 9, 10, 5),
@@ -61,7 +61,7 @@ public class BankBlock extends Block{
     		Block.makeCuboidShape(1, 1, 11, 11, 2, 15)
     		).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
     
-    private static final VoxelShape SHAPE_W=Stream.of(
+    private static final VoxelShape SHAPE_E=Stream.of(
     		Block.makeCuboidShape(0, 0, 0, 16, 1, 16),
     		Block.makeCuboidShape(10, 4, 0, 11, 14, 16),
     		Block.makeCuboidShape(11, 1, 7, 13, 10, 9),

@@ -1,11 +1,8 @@
 package com.bado.economyforcrafters.objects.tileentity;
 
-import javax.annotation.Nullable;
-
 import com.bado.economyforcrafters.init.EfcTileEntityTypes;
 import com.bado.economyforcrafters.util.helpers.NBTHelper;
 
-import net.minecraft.block.Block;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
@@ -40,8 +37,7 @@ public class MarketizerTE extends TileEntity implements ITickableTileEntity {
 	}
 
 	private void execute() {
-		int index = 0;
-		Block[] blocksRemoved = new Block[9];
+		//SOME CODE
 	}
 
 	@Override
