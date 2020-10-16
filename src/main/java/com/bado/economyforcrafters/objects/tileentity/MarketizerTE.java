@@ -3,6 +3,8 @@ package com.bado.economyforcrafters.objects.tileentity;
 import javax.annotation.Nullable;
 
 import com.bado.economyforcrafters.init.EfcTileEntityTypes;
+import com.bado.economyforcrafters.util.helpers.NBTHelper;
+
 import net.minecraft.block.Block;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ITickableTileEntity;
@@ -10,47 +12,41 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 
 public class MarketizerTE extends TileEntity implements ITickableTileEntity {
-    public int tick;
-    boolean initialized=false;
-    public MarketizerTE(TileEntityType<?> tileEntityTypeIn) {
-        super(tileEntityTypeIn);
-    }
+	public int x, y, z, tick;
+	boolean initialized = false;
 
-    public MarketizerTE(){
-        this(EfcTileEntityTypes.MARKETIZER.get());
-    }
+	public MarketizerTE(TileEntityType<?> tileEntityTypeIn) {
+		super(tileEntityTypeIn);
+	}
 
-    @Override
-    public void tick() {
-        if(!initialized) init();
-        tick++;
-        if(tick>=40){
-            tick=0;
-            execute();
-        }
-    }
+	public MarketizerTE() {
+		this(EfcTileEntityTypes.MARKETIZER.get());
+	}
 
-    private void init() {
-        initialized=true;
-        tick=0;
-    }
+	@Override
+	public void tick() {
+		if (!initialized)
+			init();
+		tick++;
+		if (tick >= 40) {
+			tick = 0;
+			execute();
+		}
+	}
 
-    private void execute() {
-        int index=0;
-        Block[] blocksRemoved=new Block[9];
-    }
+	private void init() {
+		initialized = true;
+		tick = 0;
+	}
 
-    /*
-    @Override
-    public CompoundNBT write(CompoundNBT compound) {
-        compound.put("initvalues",NBTHelper.toNBT(this));
-        return super.write(compound);
-    }
-    
-    
-    @Nullable
-    @Override
-    public void read(CompoundNBT compound){
-        super.read(compound);
-    }*/
+	private void execute() {
+		int index = 0;
+		Block[] blocksRemoved = new Block[9];
+	}
+
+	@Override
+	public CompoundNBT write(CompoundNBT compound) {
+		compound.put("initvalues", NBTHelper.toNBT(this));
+		return super.write(compound);
+	}
 }

@@ -2,6 +2,7 @@ package com.bado.economyforcrafters;
 
 import com.bado.economyforcrafters.init.EfcBlocks;
 import com.bado.economyforcrafters.init.EfcItems;
+import com.bado.economyforcrafters.init.EfcTileEntityTypes;
 import com.bado.economyforcrafters.util.Registration;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -32,8 +33,7 @@ public class EconomyForCrafters
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         EfcBlocks.BLOCKS.register(modEventBus);
         EfcItems.ITEMS.register(modEventBus);
-
-
+        EfcTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         //Registration.register();
 
         MinecraftForge.EVENT_BUS.register(this);
