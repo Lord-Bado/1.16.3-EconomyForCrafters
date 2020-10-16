@@ -10,7 +10,7 @@ license="All rights reserved"
 
 modId="efc" #mandatory
 
-version="1.16.3-1.0.0" #mandatory
+version="1.16.3-1.0.1" #mandatory
 
 displayName="Economy For Crafters" #mandatory
 
