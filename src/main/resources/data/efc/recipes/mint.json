@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " d ",
+    "dsd",
+    "rir"
+  ],
+  "key":
+  {
+    "d":
+    {
+      "item": "minecraft:diamond"
+    },
+    "s":
+    {
+      "item": "minecraft:stonecutter"
+    },
+    "r":
+    {
+      "item": "minecraft:redstone"
+    },
+    "i":
+    {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result":
+  {
+    "item": "efc:mint",
+    "count": 1
+  }
+}

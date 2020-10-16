@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ggg",
+    "geg",
+    "pip"
+  ],
+  "key":
+  {
+    "g":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "e":
+    {
+      "item": "minecraft:ender_eye"
+    },
+    "p":
+    {
+      "tag": "minecraft:planks"
+    },
+    "i":
+    {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result":
+  {
+    "item": "efc:marketizer",
+    "count": 1
+  }
+}

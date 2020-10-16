@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "efc:gold_plate"
+  },
+  "result": "efc:coin",
+  "experience": 0.0,
+  "cookingtime": 600
+}

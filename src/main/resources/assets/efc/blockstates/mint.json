@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "efc:block/mint",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "efc:block/mint",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "efc:block/mint"
+    },
+    "facing=west": {
+      "model": "efc:block/mint",
+      "y": 270
+    }
+  }
+}

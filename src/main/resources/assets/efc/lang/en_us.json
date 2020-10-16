@@ -1,0 +1,9 @@
+{
+  "itemGroup.tab": "Economy For Crafters",
+  "item.efc.coin": "Coin",
+  "item.efc.gold_plate": "Coin Plate",
+  "block.efc.bank": "Bank",
+  "block.efc.mint": "Mint",
+  "block.efc.gold_ore": "EFC Gold",
+  "block.efc.marketizer": "Marketizer"
+}

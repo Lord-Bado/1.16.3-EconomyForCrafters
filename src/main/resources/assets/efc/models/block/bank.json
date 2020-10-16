@@ -1,0 +1,109 @@
+{
+    "textures": {
+        "bankface": "minecraft:block/bankface",
+        "bedrock": "minecraft:block/bedrock",
+        "polished_diorite": "minecraft:block/polished_diorite"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "bottom",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "east": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "up": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "top",
+            "from": [ 0, 16, 0 ], 
+            "to": [ 16, 32, 14 ], 
+            "faces": {
+                "north": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 16 ] },
+                "east": { "texture": "#polished_diorite", "uv": [ 0, 0, 14, 16 ] },
+                "south": { "texture": "#bankface", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#polished_diorite", "uv": [ 0, 0, 14, 16 ] },
+                "up": { "texture": "#polished_diorite", "uv": [ 0, 0, 16, 14 ] }
+            }
+        },
+        {
+            "name": "bezel b",
+            "from": [ 0, 16, 14 ], 
+            "to": [ 16, 17, 16 ], 
+            "faces": {
+                "east": { "texture": "#bedrock", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#bedrock", "uv": [ 0, 0, 16, 1 ] },
+                "west": { "texture": "#bedrock", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#bedrock", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "bezel t",
+            "from": [ 0, 31, 14 ], 
+            "to": [ 16, 32, 16 ], 
+            "faces": {
+                "east": { "texture": "#bedrock", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#bedrock", "uv": [ 0, 0, 16, 1 ] },
+                "west": { "texture": "#bedrock", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#bedrock", "uv": [ 0, 0, 16, 2 ] },
+                "down": { "texture": "#bedrock", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "bezel l",
+            "from": [ 0, 17, 14 ], 
+            "to": [ 1, 31, 16 ], 
+            "faces": {
+                "east": { "texture": "#bedrock", "uv": [ 0, 0, 2, 14 ] },
+                "south": { "texture": "#bedrock", "uv": [ 0, 0, 1, 14 ] },
+                "west": { "texture": "#bedrock", "uv": [ 0, 0, 2, 14 ] }
+            }
+        },
+        {
+            "name": "bezel r",
+            "from": [ 15, 17, 14 ], 
+            "to": [ 16, 31, 16 ], 
+            "faces": {
+                "east": { "texture": "#bedrock", "uv": [ 0, 0, 2, 14 ] },
+                "south": { "texture": "#bedrock", "uv": [ 0, 0, 1, 14 ] },
+                "west": { "texture": "#bedrock", "uv": [ 0, 0, 2, 14 ] }
+            }
+        }
+    ]
+}
