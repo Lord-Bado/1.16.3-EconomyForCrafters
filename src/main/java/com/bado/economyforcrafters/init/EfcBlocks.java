@@ -26,6 +26,5 @@ public class EfcBlocks {
     public static final RegistryObject<Block> BANK= BLOCKS.register("bank", BankBlock::new);
     public static final RegistryObject<Block> MINT= BLOCKS.register("mint", MintBlock::new);
     public static final RegistryObject<Block> MARKETIZER= BLOCKS.register("marketizer", MarketizerBlock::new);
-    public static final RegistryObject<Block> MARKETIZER_CHEST= BLOCKS.register("marketizer_chest", MarketizerBlock::new);
 
 }

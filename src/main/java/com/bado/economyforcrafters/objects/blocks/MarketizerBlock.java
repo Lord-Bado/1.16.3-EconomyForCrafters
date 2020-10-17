@@ -143,7 +143,7 @@ public class MarketizerBlock extends Block {
 	/**
 	 * Action handler
 	 */
-/*
+
 	@Override
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
 			Hand handIn, BlockRayTraceResult result) {
@@ -168,6 +168,6 @@ public class MarketizerBlock extends Block {
 			}
 		}
 	}
-	*/
+	
 
 }
