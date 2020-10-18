@@ -15,6 +15,5 @@ public class EfcTileEntityTypes {
     public static final RegistryObject<TileEntityType<MarketizerTE>> MARKETIZER = TILE_ENTITY_TYPES
             .register("marketizer",()-> TileEntityType.Builder.create(MarketizerTE::new, EfcBlocks.MARKETIZER.get()).build(null));
     
-    /*public static final RegistryObject<TileEntityType<MarketizerTE>> MARKETIZER_CHEST = TILE_ENTITY_TYPES
-            .register("marketizer_container",()-> TileEntityType.Builder.create(MarketizerTE::new, EfcBlocks.MARKETIZER.get()).build(null));*/
+    
 }

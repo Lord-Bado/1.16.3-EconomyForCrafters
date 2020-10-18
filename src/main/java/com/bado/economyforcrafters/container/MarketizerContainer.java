@@ -79,16 +79,16 @@ public class MarketizerContainer extends Container {
 		if (slot != null && slot.getHasStack()) {
 			ItemStack itemStack1 = slot.getStack();
 			itemStack = itemStack1.copy();
-			if(index < 36) {
-				if(!this.mergeItemStack(itemStack1, 36, this.inventorySlots.size(), true)) {
+			if (index < 36) {
+				if (!this.mergeItemStack(itemStack1, 36, this.inventorySlots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
-			}else if(!this.mergeItemStack(itemStack1, 0, 36, false)) {
+			} else if (!this.mergeItemStack(itemStack1, 0, 36, false)) {
 				return ItemStack.EMPTY;
 			}
-			if(itemStack1.isEmpty()) {
+			if (itemStack1.isEmpty()) {
 				slot.putStack(ItemStack.EMPTY);
-			}else {
+			} else {
 				slot.onSlotChanged();
 			}
 		}

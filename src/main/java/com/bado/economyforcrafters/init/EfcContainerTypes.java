@@ -2,8 +2,6 @@ package com.bado.economyforcrafters.init;
 
 import com.bado.economyforcrafters.EconomyForCrafters;
 import com.bado.economyforcrafters.container.MarketizerContainer;
-import com.bado.economyforcrafters.objects.blocks.MarketizerBlock;
-import com.bado.economyforcrafters.objects.tileentity.MarketizerTE;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
