@@ -8,11 +8,14 @@ import com.bado.economyforcrafters.objects.blocks.MarketizerBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.merchant.IMerchant;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.MerchantOffer;
+import net.minecraft.item.MerchantOffers;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -32,7 +35,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
-public class MarketizerTE extends LockableLootTileEntity implements ITickableTileEntity {
+public class MarketizerTE extends LockableLootTileEntity implements ITickableTileEntity, IMerchant {
 	public int x, y, z, tick;
 	boolean initialized = false;
 	private NonNullList<ItemStack> contents = NonNullList.withSize(10, ItemStack.EMPTY);
@@ -205,5 +208,64 @@ public class MarketizerTE extends LockableLootTileEntity implements ITickableTil
 		if(itemHandler != null) {
 			itemHandler.invalidate();
 		}
+	}
+
+	@Override
+	public void setCustomer(PlayerEntity player) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public PlayerEntity getCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MerchantOffers getOffers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setClientSideOffers(MerchantOffers offers) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTrade(MerchantOffer offer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void verifySellingItem(ItemStack stack) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getXp() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setXP(int xpIn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean func_213705_dZ() {
+		// Unmapped and unsure
+		return false;
+	}
+
+	@Override
+	public SoundEvent getYesSound() {
+		return null;
 	}
 }
